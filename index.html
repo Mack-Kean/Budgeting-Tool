@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bugeting Tool</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+
+    <h1>Bugeting Tool</h1>
+
+    <div id="data_input">
+        <form>
+            <label for="expense_name">Type of Expense</label><br>
+            <input type="text" id="expense_name" name="expense_name"><br>
+            <label for="dollar_amount">Budget</label><br>
+            <input type="number" id="dollar_amount" name="dollar_amount"> <br>
+            <input type="button" id="add_item" value="Add">
+        </form>
+    </div>
+
+    <div id="budget_table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Expense Type</th>
+                    <th>Budget</th>
+                </tr>
+            </thead>
+            <tbody id="table_body"></tbody>
+            <tfoo>
+                <tr>
+                    <th>Total</th>
+                    <td id="total"></td>
+                </tr>
+            </tfoo>
+        </table>
+
+        <h3 id="error_text"></h3>
+    </div>
+
+    <div id="piechart"></div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
