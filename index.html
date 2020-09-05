@@ -13,37 +13,40 @@
 
     <h1>Bugeting Tool</h1>
 
-    <div id="data_input">
-        <form>
-            <label for="expense_name">Type of Expense</label><br>
-            <input type="text" id="expense_name" name="expense_name"><br>
-            <label for="dollar_amount">Budget</label><br>
-            <input type="number" id="dollar_amount" name="dollar_amount"> <br>
-            <input type="button" id="add_item" value="Add">
-        </form>
+    <div id="flex_container">
+        <div id="data_input">
+            <form>
+                <input type="text" id="expense_name" placeholder="Type of Expense"><br>
+                <input type="number" id="dollar_amount" placeholder="Budget"> <br>
+                <input type="button" id="add_item" value="Add">
+            </form>
+        </div>
+
+        <div id="budget_table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Expense Type</th>
+                        <th>Budget</th>
+                    </tr>
+                </thead>
+                <tbody id="table_body"></tbody>
+                <tfoo>
+                    <tr>
+                        <th>Total:</th>
+                        <td id="total">$0</td>
+                    </tr>
+                </tfoo>
+            </table>
+
+            <h3 id="error_text"></h3>
+        </div>
+        <div id="piechart"></div>
     </div>
 
-    <div id="budget_table">
-        <table>
-            <thead>
-                <tr>
-                    <th>Expense Type</th>
-                    <th>Budget</th>
-                </tr>
-            </thead>
-            <tbody id="table_body"></tbody>
-            <tfoo>
-                <tr>
-                    <th>Total:</th>
-                    <td id="total">$0</td>
-                </tr>
-            </tfoo>
-        </table>
 
-        <h3 id="error_text"></h3>
-    </div>
 
-    <div id="piechart"></div>
+
 
 </body>
 
