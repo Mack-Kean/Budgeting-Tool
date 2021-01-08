@@ -67,13 +67,16 @@ function drawChart() {
 
   // Set chart options
   var options = {'title':'Budget Breakdown',
-                 'width':500,
-                 'height':400};
+                 'width': 400,
+                 'height': 300};
 
   // Instantiate and draw our chart, passing in some options.
   var chart = new google.visualization.PieChart(document.getElementById('piechart'));
   chart.draw(data, options);
 }
+
+//code for background image
+document.body.style.backgroundImage = "url('images/background-1.jpg')";
 
 
 
